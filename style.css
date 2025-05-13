@@ -1,0 +1,268 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Baloo 2', cursive; /* Fonte divertida e legível */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Azul céu bem clarinho */
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #ff6347; /* Tomate - Cor vibrante */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5em; /* Tamanho grande para o título */
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.8em; /* Tamanho grande para subtítulos */
+    border-bottom: 3px dashed #ffcc00; /* Amarelo */
+    display: inline-block; /* Para a borda ficar só no texto */
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+.nome-apresentador {
+    font-size: 1.4em; /* Aumenta o tamanho em relação ao parágrafo onde está */
+    color: #FFD700;   /* Cor Dourada - para destacar */
+    font-weight: bold; /* Deixa em negrito */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* Sombra sutil para legibilidade */
+}
+
+p {
+    font-size: 1.1em; /* Texto fácil de ler */
+    margin-bottom: 10px;
+}
+
+.secao {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 800px; /* Limita a largura para melhor leitura */
+    text-align: center; /* Centraliza conteúdo das seções */
+}
+
+.emoji {
+    font-size: 1.2em; /* Emojis um pouco maiores */
+    display: inline-block;
+    /* Animação simples de pulo */
+    animation: pulo 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulo {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+/* Cabeçalho de Boas Vindas */
+.boas-vindas {
+    background: linear-gradient(135deg, #ff6347, #ffa07a); /* Gradiente Laranja/Salmão */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.boas-vindas h1 {
+    color: white;
+    margin-bottom: 5px;
+}
+.boas-vindas p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Seção "O que faz" */
+#o-que-faz .conteudo-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espaço entre imagem e texto */
+    text-align: left; /* Alinha o texto à esquerda dentro da div */
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+}
+
+#o-que-faz .ilustracao {
+    border-radius: 50%; /* Deixa a imagem redonda */
+    border: 5px solid #ffcc00; /* Borda amarela */
+    max-width: 150px; /* Tamanho máximo da imagem */
+    height: auto;
+}
+
+/* Seção Curiosidades */
+.curiosidade {
+    background-color: #e0ffff; /* Azul ciano bem claro */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #afeeee; /* Turquesa pálido */
+}
+.curiosidade p {
+    margin: 5px 0;
+}
+.botao-curiosidade {
+    background-color: #32cd32; /* Verde lima */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 20px; /* Botão bem arredondado */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+}
+.botao-curiosidade:hover {
+    background-color: #228b22; /* Verde floresta */
+}
+.resposta {
+    display: none; /* Começa escondida */
+    margin-top: 10px;
+    font-weight: bold;
+    color: #4682b4; /* Azul aço */
+    background-color: #f0f8ff;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Seção Ferramentas */
+.galeria-ferramentas {
+    display: flex;
+    justify-content: space-around; /* Espaça os itens */
+    align-items: center;
+    flex-wrap: wrap; /* Quebra linha se não couber */
+    margin-top: 20px;
+    gap: 15px;
+}
+.item-ferramenta {
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+.item-ferramenta:hover {
+    background-color: #f0f0f0; /* Fundo leve ao passar o mouse */
+}
+.item-ferramenta img {
+    max-width: 200px; /* AUMENTADO de 80px para 120px */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto; /* Aumentei um pouco a margem inferior para dar espaço */
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out; /* Adiciona uma transição suave */
+}
+
+.item-ferramenta:hover img {
+    transform: scale(1.7); /* Leve zoom ao passar o mouse sobre o item */
+}
+#descricoes-ferramentas {
+    margin-top: 20px;
+    min-height: 50px; /* Garante espaço mesmo sem descrição */
+}
+.descricao {
+    display: none; /* Começa escondida */
+    background-color: #fffacd; /* Amarelo Limão Chiffon */
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px dashed #ffd700; /* Dourado */
+    color: #555;
+}
+.descricao.visivel {
+    display: block; /* Mostra a descrição ativa */
+}
+
+
+/* Seção Simulação */
+.botoes-sintomas {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaço entre botões */
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.botao-sintoma {
+    background-color: #87cefa; /* Azul céu claro */
+    color: #333;
+    border: 2px solid #4682b4; /* Azul aço */
+    padding: 12px 25px; /* Botões grandes */
+    font-size: 1.1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+.botao-sintoma:hover {
+    background-color: #4682b4;
+    color: white;
+    transform: scale(1.05); /* Efeito de zoom */
+}
+.resultado {
+    background-color: #e6e6fa; /* Lavanda */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 2px solid #9370db; /* Roxo médio */
+}
+.resultado #indicacao {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #483d8b; /* Azul ardósia escuro */
+    min-height: 30px; /* Espaço para o texto */
+}
+.aviso-jogo {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #dc143c; /* Vermelho carmesim */
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #ffcc00; /* Amarelo */
+    color: #333;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    p, .botao-curiosidade, .botao-sintoma {
+        font-size: 1em;
+    }
+    #o-que-faz .conteudo-flex {
+        flex-direction: column; /* Empilha imagem e texto */
+        text-align: center; /* Centraliza tudo */
+    }
+    #o-que-faz .ilustracao {
+        margin-bottom: 15px;
+    }
+    .galeria-ferramentas {
+        justify-content: center; /* Centraliza itens quando quebrar linha */
+    }
+    .botoes-sintomas {
+       flex-direction: column; /* Empilha os botões */
+       align-items: center;
+    }
+     .botao-sintoma {
+        width: 80%; /* Botões ocupam mais largura */
+        padding: 15px;
+    }
+}
