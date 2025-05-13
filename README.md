@@ -34,6 +34,6 @@ O trabalho tem como missão ensinar outras crianças sobre o que faz um cardiolo
 
 ## 🚀 Como visualizar o projeto
 
-1. Baixe ou clone o repositório:
-```bash
-git clone [https://github.com/Pri-Farias/Projeto_Lunna.git]
+
+🔗 **Acesse a página do projeto online aqui:**  
+👉 [(https://pri-farias.github.io/Projeto_Lunna/)](https://pri-farias.github.io/Projeto_Lunna/)
